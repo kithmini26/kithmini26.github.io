@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vimarshana Kithmini — Portfolio | Software Engineering, Data Analysis & Business Analysis</title>
+  <meta name="description" content="Professional portfolio of Vimarshana Kithmini - Final year Software Engineering Undergraduate at SLTC specializing in Data Analysis, Explainable AI, Business Analysis, and QA Automation.">
+  
+  <!-- FontAwesome & Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-badge">VK</div>
+        <span>Vimarshana Kithmini</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#roles" class="nav-link">Role Persona</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#academics" class="nav-link">Academics</a></li>
+        <li><a href="#leadership" class="nav-link">Leadership</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" title="Toggle Dark/Light Mode">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="nav-cta" onclick="openResumeModal()">
+          <i class="fas fa-file-invoice"></i> Resumes
+        </button>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle Navigation Menu">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-status">
+          <span class="status-dot"></span>
+          <span>Seeking Internships in Data Analysis, Business Analysis & QA (2026)</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">Vimarshana</span> Kithmini
+        </h1>
+
+        <div class="hero-subtitle">
+          <span id="typing-text" class="typing-effect"></span>
+        </div>
+
+        <p class="hero-description">
+          Final-year <strong>BSc (Hons) Software Engineering</strong> undergraduate at Sri Lanka Technology Campus (GPA 3.64). Passionate about turning raw data into strategic insights, building explainable AI systems, streamlining business processes, and ensuring high-quality software execution.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn-primary">
+            Explore Projects <i class="fas fa-arrow-right"></i>
+          </a>
+          <button class="btn-secondary" onclick="openResumeModal()">
+            <i class="fas fa-download"></i> View Tailored CVs
+          </button>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://hackerrank.com" target="_blank" class="social-link" title="HackerRank"><i class="fab fa-hackerrank"></i></a>
+          <a href="mailto:dissanayakekithmini@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="hero-visual">
+        <div class="avatar-wrapper">
+          <img src="assets/avatar.png" alt="Vimarshana Kithmini Portrait" class="avatar-img" />
+          
+          <div class="badge-card top-right">
+            <div class="badge-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <div class="badge-title">BSc Software Engineering</div>
+              <div class="badge-desc">GPA 3.64 / 4.00 @ SLTC</div>
+            </div>
+          </div>
+
+          <div class="badge-card bottom-left">
+            <div class="badge-icon" style="background:var(--gradient-emerald);"><i class="fas fa-award"></i></div>
+            <div>
+              <div class="badge-title">IEEE CS Chapter Chair</div>
+              <div class="badge-desc">Outstanding Volunteer 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Role Selector Bar -->
+  <section class="role-bar-section" id="roles">
+    <div class="container">
+      <div class="role-bar-header">
+        <p><i class="fas fa-sliders" style="color:var(--accent-cyan); margin-right:6px;"></i> SELECT TARGET RECRUITER VIEW PERSONA</p>
+      </div>
+
+      <div class="role-selector-grid" id="role-selector-grid">
+        <!-- Dynamically rendered via app.js -->
+      </div>
+
+      <!-- Tailored Summary Banner -->
+      <div class="tailored-summary-box">
+        <div class="summary-icon-wrapper">
+          <i class="fas fa-bullseye"></i>
+        </div>
+        <div class="summary-text-box">
+          <h4 id="summary-role-title">Tailored Objective</h4>
+          <p id="summary-role-text">Select a persona tab above to switch resume context.</p>
+          <div id="summary-focus-pills" style="margin-top:0.8rem; display:flex; flex-wrap:wrap; gap:0.4rem;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Metrics / Stats Section -->
+  <section class="container">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">3.64</div>
+        <div class="stat-label">Academic GPA (SLTC)</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">6+</div>
+        <div class="stat-label">Major Tech & AI Projects</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">8+</div>
+        <div class="stat-label">Leadership & ExCo Honors</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">6+</div>
+        <div class="stat-label">Professional Certifications</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix Section -->
+  <section class="skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">COMPETENCIES & TOOLS</span>
+        <h2 class="section-title">Technical & Analytical <span class="gradient-text">Skillset</span></h2>
+        <p class="section-desc">Comprehensive toolstack across Data Analytics, Explainable AI, Software Testing, Business Analysis, and Full-Stack Engineering.</p>
+      </div>
+
+      <div class="skills-filter" id="skills-filter">
+        <button class="filter-btn active" data-filter="all">All Skills</button>
+        <button class="filter-btn" data-filter="data">Data Analysis & AI</button>
+        <button class="filter-btn" data-filter="business">Business & Requirements</button>
+        <button class="filter-btn" data-filter="qa">Testing & QA</button>
+        <button class="filter-btn" data-filter="tech">Programming & Databases</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">PORTFOLIO SHOWCASE</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects & AI Research</span></h2>
+        <p class="section-desc">Practical solutions ranging from Explainable AI for microloans to interactive retail analytics and civic platforms.</p>
+      </div>
+
+      <div class="skills-filter" id="projects-filter" style="margin-bottom:3rem;">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ai-ml">AI & Explainability</button>
+        <button class="filter-btn" data-filter="data-analysis">Data & Business Analytics</button>
+        <button class="filter-btn" data-filter="web-apps">Web Systems & APIs</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section class="cert-section" id="certifications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">VERIFIED CREDENTIALS</span>
+        <h2 class="section-title">Certifications & <span class="gradient-text">Badges</span></h2>
+        <p class="section-desc">Professional certifications in Power BI data modelling, SQL, software testing, and software engineering.</p>
+      </div>
+
+      <div class="cert-grid" id="cert-grid">
+        <!-- Rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Academics Section -->
+  <section class="timeline-section" id="academics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">ACADEMICS & DEGREES</span>
+        <h2 class="section-title">Education <span class="gradient-text">History</span></h2>
+      </div>
+
+      <div style="max-width:800px; margin:0 auto;">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <div class="timeline-date">February 2023 - Present</div>
+              <div class="timeline-title">BSc (Hons) in Software Engineering</div>
+              <div class="timeline-subtitle">Sri Lanka Technology Campus (SLTC)</div>
+              <p class="timeline-desc">Academic GPA: <strong>3.64 / 4.00</strong>. Specialized focus on software engineering, data analysis, machine learning pipelines, and quality assurance.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <div class="timeline-date">2021</div>
+              <div class="timeline-title">GCE Advanced Level — Physical Science</div>
+              <div class="timeline-subtitle">Central College Bandarawela, Sri Lanka</div>
+              <p class="timeline-desc">Strong foundation in physical sciences, mathematics, physics, and analytical thinking.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-card">
+              <div class="timeline-date">2017</div>
+              <div class="timeline-title">GCE Ordinary Level</div>
+              <div class="timeline-subtitle">Central College Bandarawela, Sri Lanka</div>
+              <p class="timeline-desc">High academic performance with distinction results: <strong>8 A's and 1 B</strong>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Leadership & Honors Section -->
+  <section class="honors-section" id="leadership">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">LEADERSHIP & RECOGNITION</span>
+        <h2 class="section-title">Honors, Awards & <span class="gradient-text">IEEE Leadership</span></h2>
+        <p class="section-desc">Active leader in executive student bodies, managing flagship tech hackathons and community growth initiatives.</p>
+      </div>
+
+      <div class="honors-grid" id="honors-grid">
+        <!-- Rendered via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Tailored Resume Hub -->
+  <section class="resume-section">
+    <div class="container">
+      <div class="resume-card-box">
+        <div class="resume-info">
+          <span class="section-tag">TAILORED RESUMES</span>
+          <h3>Need a Role-Specific <span class="gradient-text">CV Version?</span></h3>
+          <p>Download the exact CV version customized for your target position — whether for Data Analytics, Business Analysis, QA Automation, or Project Management.</p>
+          <button class="btn-primary" onclick="openResumeModal()">
+            <i class="fas fa-eye"></i> Preview & Download CVs
+          </button>
+        </div>
+
+        <div class="resume-selector">
+          <div class="resume-option" onclick="switchRole('data-analyst'); openResumeModal();">
+            <div class="resume-option-left">
+              <i class="fas fa-chart-line"></i>
+              <div>
+                <div class="resume-option-title">Data Analyst Internship CV</div>
+                <div style="font-size:0.75rem; color:var(--text-muted);">Focus on Power BI, SQL, Python, EDA</div>
+              </div>
+            </div>
+            <span class="btn-download-sm"><i class="fas fa-file-pdf"></i> View</span>
+          </div>
+
+          <div class="resume-option" onclick="switchRole('business-analyst'); openResumeModal();">
+            <div class="resume-option-left">
+              <i class="fas fa-briefcase"></i>
+              <div>
+                <div class="resume-option-title">Business Analyst Internship CV</div>
+                <div style="font-size:0.75rem; color:var(--text-muted);">Focus on Requirements, SDLC, Process Mapping</div>
+              </div>
+            </div>
+            <span class="btn-download-sm"><i class="fas fa-file-pdf"></i> View</span>
+          </div>
+
+          <div class="resume-option" onclick="switchRole('qa-engineer'); openResumeModal();">
+            <div class="resume-option-left">
+              <i class="fas fa-shield-halved"></i>
+              <div>
+                <div class="resume-option-title">Software QA Internship CV</div>
+                <div style="font-size:0.75rem; color:var(--text-muted);">Focus on Selenium, Playwright, API & Postman</div>
+              </div>
+            </div>
+            <span class="btn-download-sm"><i class="fas fa-file-pdf"></i> View</span>
+          </div>
+
+          <div class="resume-option" onclick="switchRole('project-manager'); openResumeModal();">
+            <div class="resume-option-left">
+              <i class="fas fa-list-check"></i>
+              <div>
+                <div class="resume-option-title">Project Management CV</div>
+                <div style="font-size:0.75rem; color:var(--text-muted);">Focus on Agile, IEEE CS Chair, Sprint Coordination</div>
+              </div>
+            </div>
+            <span class="btn-download-sm"><i class="fas fa-file-pdf"></i> View</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Reach Out Section -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+        <p class="section-desc">Open for Internship opportunities and technical collaborations. Feel free to reach out!</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info Card -->
+        <div class="contact-info-card">
+          <div>
+            <h3 style="font-size:1.5rem; margin-bottom:1.5rem;">Contact Information</h3>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div class="contact-details">
+                <span>Email Address</span>
+                <a href="mailto:dissanayakekithmini@gmail.com">dissanayakekithmini@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+              <div class="contact-details">
+                <span>Location</span>
+                <p>Amunudowa, Bandarawela, Sri Lanka</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="border-top:1px solid var(--glass-border); padding-top:1.5rem;">
+            <p style="font-size:0.85rem; color:var(--text-secondary); margin-bottom:0.8rem;">Social & Professional Profiles</p>
+            <div class="hero-socials" style="justify-content:flex-start;">
+              <a href="https://linkedin.com" target="_blank" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+              <a href="https://hackerrank.com" target="_blank" class="social-link"><i class="fab fa-hackerrank"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" class="form-control" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Your Email</label>
+              <input type="email" id="contact-email" class="form-control" placeholder="jane@company.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="Internship Opportunity / Project Inquiry" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Hello Vimarshana, I would like to discuss..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="width:100%; justify-content:center;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <p>&copy; 2026 <strong>Vimarshana Kithmini</strong>. Built with precision, modern HTML5, CSS3 & JavaScript.</p>
+      <div style="font-size:0.8rem; color:var(--text-muted);">
+        BSc (Hons) Software Engineering | SLTC • GPA 3.64
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModal('project-modal')">&times;</button>
+      <div id="project-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Tailored Resume Modal -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModal('resume-modal')">&times;</button>
+      <div id="resume-modal-body"></div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
