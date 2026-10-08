@@ -79,15 +79,11 @@ Simply double-click [`index.html`](file:///c:/Users/ASUS/New%20photofolio/index.
 
 ## 🌐 Deploying to GitHub Pages (Free Hosting)
 
-1. Create a new public repository on GitHub named `portfolio`.
-2. Push local commits to your repository:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/<your-username>/portfolio.git
-   git push -u origin main
-   ```
-3. Go to **Settings > Pages** on GitHub, set source to `Deploy from a branch`, select `main` branch, and click **Save**.
-4. Your site will be live at `https://<your-username>.github.io/portfolio/`.
+## Live site
+
+The site is hosted on GitHub Pages: https://kithmini26.github.io/
+
+It deploys automatically from the `main` branch. Every push updates the site within a minute or two.
 
 ---
 
