@@ -65,7 +65,7 @@
 ## 🛠️ How to Run Locally
 
 ### Option 1: Direct File Launch
-Simply double-click [`index.html`](file:///c:/Users/ASUS/New%20photofolio/index.html) to open in your browser.
+Simply double-click `index.html` to open it in your browser.
 
 ### Option 2: Local Python Server
 1. Open terminal inside the project root directory.
@@ -77,11 +77,9 @@ Simply double-click [`index.html`](file:///c:/Users/ASUS/New%20photofolio/index.
 
 ---
 
-## 🌐 Deploying to GitHub Pages (Free Hosting)
+## 🌐 Live Site
 
-## Live site
-
-The site is hosted on GitHub Pages: https://kithmini26.github.io/
+The portfolio is hosted on Vercel: **https://kithmini-portfolio.vercel.app/**
 
 It deploys automatically from the `main` branch. Every push updates the site within a minute or two.
 
@@ -90,10 +88,10 @@ It deploys automatically from the `main` branch. Every push updates the site wit
 ## 📬 Contact & Connect
 
 - **Email**: [dissanayakekithmini@gmail.com](mailto:dissanayakekithmini@gmail.com)
-- **Location**: Bandarawela, Sri Lanka
-- **LinkedIn**: [LinkedIn Profile](https://linkedin.com)
-- **GitHub**: [GitHub Profile](https://github.com)
-- **HackerRank**: [HackerRank Profile](https://hackerrank.com)
+- **Location**: Sri Lanka
+- **LinkedIn**: [Vimarshana Kithmini](https://www.linkedin.com/in/vimarshana-kithmini-ab395331b/)
+- **GitHub**: [kithmini26](https://github.com/kithmini26)
+- **HackerRank**: [dissanayakekith1](https://www.hackerrank.com/profile/dissanayakekith1)
 
 ---
 *© 2026 Vimarshana Kithmini. Built with precision and passion.*
